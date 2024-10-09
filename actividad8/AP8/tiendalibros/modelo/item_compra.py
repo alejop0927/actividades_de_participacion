@@ -1,5 +1,6 @@
 class ItemCompra:
- def __init__(self,libro,cantidad_libro,precio):
+ def __init__(self,isbn,libro,cantidad_libro,precio):
+  self.isbn=isbn
   self.libro:str=libro
   self.cantidad_libro=cantidad_libro
   self.precio=precio

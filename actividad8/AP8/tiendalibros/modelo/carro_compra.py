@@ -13,6 +13,9 @@ class CarroCompras:
       self.sumita=sumita
       sumita=sum(ItemCompra(self.precio))
       return sumita
+   
+   def quitar_item(self):
+       self.items = [item for item in self.items if item['isbn'] != ItemCompra(self.isbn)]
 
 
 
